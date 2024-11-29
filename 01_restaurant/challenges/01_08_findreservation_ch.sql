@@ -5,3 +5,8 @@
 -- Stevensen, Stephensen, Stevenson, Stephenson, Stuyvesant
 
 -- There are four people in the party. Today is June 14th.
+SELECT * from Reservations
+inner join Customers on
+Reservations.CustomerID = Customers.CustomerID
+where Customers.LastName like 'St%' and PartySize=4
+and Date>='2022-06-14'; --order by Date DESC; --;
