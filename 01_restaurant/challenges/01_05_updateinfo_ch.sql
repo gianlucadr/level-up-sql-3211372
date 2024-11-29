@@ -2,3 +2,4 @@
 
 -- Taylor Jenkins, of 27170 6th Ave., Washington, DC,
 -- has moved to 74 Pine St., New York, NY.
+UPDATE Customers SET LastName='Bruco' where CustomerID=101;
